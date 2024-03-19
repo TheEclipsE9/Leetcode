@@ -9,6 +9,7 @@ namespace Leetcode.Test.Easy.Array
         [InlineData(new int[] { 1, 0, 0, 3, 12 }, new int[] { 1, 3, 12, 0, 0 })]
         [InlineData(new int[] { 1, 3, 12, 0, 0 }, new int[] { 1, 3, 12, 0, 0 })]
         [InlineData(new int[] { 0}, new int[] { 0 })]
+        [InlineData(new int[] { 1}, new int[] { 1 })]
         public void Test(int[] array, int[] expected)
         {
             MoveZeroes(array);
@@ -18,8 +19,8 @@ namespace Leetcode.Test.Easy.Array
 
         private void MoveZeroes(int[] nums)
         {
-            int left = 0;
-            int right = 0;
+            int left = 0;//zeroElement
+            int right = 0;//nonZeroElement
 
             while (right < nums.Length)
             {
