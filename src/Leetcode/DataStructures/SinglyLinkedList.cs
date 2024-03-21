@@ -4,6 +4,19 @@
     {
         public SinglyLinkedListNode<T>? Head;
 
+        public int Length()
+        {
+            int length = 0;
+            var current = this.Head;
+            while (current is not null)
+            {
+                length++;
+                current = current.Next;
+            }
+
+            return length;
+        }
+
         public void Print()
         {
             var current = this.Head;
