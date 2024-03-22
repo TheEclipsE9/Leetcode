@@ -69,6 +69,17 @@ namespace Leetcode.Test.NotLeetcode.SinglyLinkedList
 
 
 
+            SinglyLinkedList<int> linkedList4 = new SinglyLinkedList<int>();
+
+            testData.Add(new object[] { linkedList4, 0 });
+
+
+            SinglyLinkedList<int> linkedList5 = new SinglyLinkedList<int>();
+            linkedList5.Head = new SinglyLinkedListNode<int>(1);
+
+            testData.Add(new object[] { linkedList5, 1 });
+
+
             return testData;
         }
     }
