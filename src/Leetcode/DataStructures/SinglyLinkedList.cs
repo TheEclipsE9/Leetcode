@@ -6,6 +6,47 @@ namespace Leetcode.DataStructures
     {
         public SinglyLinkedListNode<T>? Head;
 
+        public void InsertAt(T value, int index)
+        {
+            var newNode = new SinglyLinkedListNode<T>(value);
+            if (index == 0)
+            {
+                newNode.Next = Head;
+                Head = newNode;
+                return;
+            }
+
+            SinglyLinkedListNode<T> nodeBefore = GetAt(index - 1);
+            if (nodeBefore is null)
+            {
+                throw new IndexOutOfRangeException();
+            }
+
+            newNode.Next = nodeBefore.Next;
+            nodeBefore.Next = newNode;
+        }
+
+        public SinglyLinkedListNode<T>? GetAt(int index)
+        {
+            int currentIndex = 0;
+            var current = Head;
+
+            while (true)
+            {
+                if (currentIndex == index)
+                {
+                    return current;
+                }
+                if (current is null)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+
+                currentIndex++;
+                current = current.Next;
+            }
+        }
+
         public void InsertAtTheEnd(T value)
         {
             var node = new SinglyLinkedListNode<T>(value);
