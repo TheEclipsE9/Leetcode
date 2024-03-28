@@ -6,6 +6,15 @@ namespace Leetcode.DataStructures
     {
         public SinglyLinkedListNode<T>? Head;
 
+        public void DeleteFirst()
+        {
+            if (Head is null)
+            {
+                return;
+            }
+            Head = Head.Next;
+        }
+
         public void InsertAt(T value, int index)
         {
             var newNode = new SinglyLinkedListNode<T>(value);
