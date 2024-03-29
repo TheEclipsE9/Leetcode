@@ -6,6 +6,32 @@ namespace Leetcode.DataStructures
     {
         public SinglyLinkedListNode<T>? Head;
 
+        public void DeleteAt(int index)
+        {
+            int currentIndex = 0;
+            var current = Head;
+            SinglyLinkedListNode<T> previous = null;
+            if (current is null)
+            {
+                return;
+            }
+            if (index == 0)
+            {
+                Head = current.Next;
+                return;
+            }
+
+            while (currentIndex < index)
+            {
+                previous = current;
+                current = current.Next;
+                currentIndex++;
+            }
+            previous.Next = current.Next;
+
+            return;
+        }
+
         public void DeleteLast()
         {
             var beforeLastNode = Head;
