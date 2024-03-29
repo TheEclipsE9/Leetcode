@@ -87,20 +87,13 @@ namespace Leetcode.DataStructures
             int currentIndex = 0;
             var current = Head;
 
-            while (true)
+            while (currentIndex < index)
             {
-                if (currentIndex == index)
-                {
-                    return current;
-                }
-                if (current is null)
-                {
-                    throw new IndexOutOfRangeException();
-                }
-
                 currentIndex++;
-                current = current.Next;
+                current = current?.Next;
             }
+
+            return current;
         }
 
         public void InsertAtTheEnd(T value)

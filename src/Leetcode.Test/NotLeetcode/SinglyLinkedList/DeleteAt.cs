@@ -43,7 +43,7 @@ namespace Leetcode.Test.NotLeetcode.SinglyLinkedList
             trd2.Next = fth2;
 
 
-            testData.Add(new object[] { linkedList2, 4, 4 });
+            testData.Add(new object[] { linkedList2, 4, null });
 
 
 
