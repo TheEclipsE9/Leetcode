@@ -2,9 +2,25 @@
 
 namespace Leetcode.DataStructures
 {
-    public class SinglyLinkedList<T>
+    public class SinglyLinkedList<T> where T : struct
     {
         public SinglyLinkedListNode<T>? Head;
+
+        public SinglyLinkedListNode<T>? Find(T value)
+        {
+            var current = Head;
+
+            while (current is not null)
+            {
+                if (EqualityComparer<T>.Default.Equals(current.Data, value))
+                {
+                    return current;
+                }
+                current = current.Next;
+            }
+
+            return current;
+        }
 
         public void DeleteAt(int index)
         {
