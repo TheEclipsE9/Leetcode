@@ -4,7 +4,9 @@ namespace Leetcode.Test.Easy.SinglyLinkedList
 {
     public class P19RemoveNthNodeFromEndofList
     {
-        // Fast and slow pointers !!!
+        // Improved way is to have 2 pointers
+        // 1sty move pointer on n steps
+        // then move both until null/or another condition
         [Theory]
         [MemberData(nameof(TestData))]
         public void Test(
