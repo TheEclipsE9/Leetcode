@@ -7,11 +7,11 @@ using Xunit.Abstractions;
 
 namespace Leetcode.Test.NotLeetcode.DoublyLinkedList
 {
-    public class InsertBeginningTest
+    public class InsertEndTest
     {
         private readonly ITestOutputHelper _output;
 
-        public InsertBeginningTest(ITestOutputHelper output)
+        public InsertEndTest(ITestOutputHelper output)
         {
             _output = output;
         }
@@ -25,6 +25,7 @@ namespace Leetcode.Test.NotLeetcode.DoublyLinkedList
             _output.WriteLine("");
             Insert(list, val);
             Print(list);
+            _output.WriteLine("");
         }
 
         private void Insert(DoublyLinkedList list, int val)
@@ -38,10 +39,10 @@ namespace Leetcode.Test.NotLeetcode.DoublyLinkedList
             }
             else
             {
-                newNode.next = list.head;
-                list.head.previous = newNode;
+                newNode.previous = list.tail;
+                list.tail.next = newNode;
 
-                list.head = newNode;
+                list.tail = newNode;
             }
         }
 
@@ -125,6 +126,8 @@ namespace Leetcode.Test.NotLeetcode.DoublyLinkedList
             DoublyLinkedList list2 = new DoublyLinkedList();
 
             testData.Add(new object[] { list2, 4 });
+
+
 
             return testData;
         }
