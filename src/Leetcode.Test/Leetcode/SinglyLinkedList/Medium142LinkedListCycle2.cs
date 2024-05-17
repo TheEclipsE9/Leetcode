@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using System.Runtime.ConstrainedExecution;
 
-namespace Leetcode.Test.Easy.SinglyLinkedList
+namespace Leetcode.Test.Leetcode.SinglyLinkedList
 {
     public class Medium142LinkedListCycle2
     {

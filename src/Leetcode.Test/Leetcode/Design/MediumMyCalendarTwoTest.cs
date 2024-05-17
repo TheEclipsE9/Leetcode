@@ -1,8 +1,8 @@
-﻿using static Leetcode.Test.Medium.MyCalendarTwoTest.MyCalendarTwo;
+﻿using static Leetcode.Test.Leetcode.Design.MediumMyCalendarTwoTest.MyCalendarTwo;
 
-namespace Leetcode.Test.Medium
+namespace Leetcode.Test.Leetcode.Design
 {
-    public class MyCalendarTwoTest
+    public class MediumMyCalendarTwoTest
     {
         [Fact]
         public void Test()

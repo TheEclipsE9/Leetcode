@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Test.Easy.SinglyLinkedList
+﻿namespace Leetcode.Test.Leetcode.SinglyLinkedList
 {
     public class P147InsertionSortList
     {

@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 
-namespace Leetcode.Test.Easy.String
+namespace Leetcode.Test.Leetcode.String
 {
     public class P344ReverseString
     {

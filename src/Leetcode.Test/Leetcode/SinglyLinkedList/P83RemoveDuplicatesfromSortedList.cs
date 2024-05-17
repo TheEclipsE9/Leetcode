@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 
-namespace Leetcode.Test.Easy.SinglyLinkedList
+namespace Leetcode.Test.Leetcode.SinglyLinkedList
 {
     public class P83RemoveDuplicatesfromSortedList
     {
@@ -77,7 +77,7 @@ namespace Leetcode.Test.Easy.SinglyLinkedList
                 }
             };
 
-            testData.Add(new object[] { head1});
+            testData.Add(new object[] { head1 });
 
 
 
@@ -104,7 +104,7 @@ namespace Leetcode.Test.Easy.SinglyLinkedList
                 }
             };
 
-            testData.Add(new object[] { head2});
+            testData.Add(new object[] { head2 });
 
 
 
@@ -131,7 +131,7 @@ namespace Leetcode.Test.Easy.SinglyLinkedList
                 }
             };
 
-            testData.Add(new object[] { head3});
+            testData.Add(new object[] { head3 });
 
 
             return testData;

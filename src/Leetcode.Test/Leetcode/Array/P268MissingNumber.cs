@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
 
-namespace Leetcode.Test.Easy.Array
+namespace Leetcode.Test.Leetcode.Array
 {
     public class P268MissingNumber
     {
         [Theory]
-        [InlineData(new int[] { 0, 1, 3}, 2)]
+        [InlineData(new int[] { 0, 1, 3 }, 2)]
         [InlineData(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }, 8)]
         [InlineData(new int[] { 0, 1 }, 2)]
         [InlineData(new int[] { 2, 1 }, 0)]

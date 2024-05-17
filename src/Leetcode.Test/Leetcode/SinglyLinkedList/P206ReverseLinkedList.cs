@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Leetcode.Test.Easy.SinglyLinkedList.P206ReverseLinkedList;
+using static Leetcode.Test.Leetcode.SinglyLinkedList.P206ReverseLinkedList;
 
-namespace Leetcode.Test.Easy.SinglyLinkedList
+namespace Leetcode.Test.Leetcode.SinglyLinkedList
 {
     // Hint 1 For every node we need to update its next
     // Hint 2 To do it we need to keep previous node

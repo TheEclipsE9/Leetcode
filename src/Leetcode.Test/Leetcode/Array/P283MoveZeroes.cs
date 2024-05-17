@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 
-namespace Leetcode.Test.Easy.Array
+namespace Leetcode.Test.Leetcode.Array
 {
     public class P283MoveZeroes
     {
@@ -8,8 +8,8 @@ namespace Leetcode.Test.Easy.Array
         [InlineData(new int[] { 0, 1, 0, 3, 12 }, new int[] { 1, 3, 12, 0, 0 })]
         [InlineData(new int[] { 1, 0, 0, 3, 12 }, new int[] { 1, 3, 12, 0, 0 })]
         [InlineData(new int[] { 1, 3, 12, 0, 0 }, new int[] { 1, 3, 12, 0, 0 })]
-        [InlineData(new int[] { 0}, new int[] { 0 })]
-        [InlineData(new int[] { 1}, new int[] { 1 })]
+        [InlineData(new int[] { 0 }, new int[] { 0 })]
+        [InlineData(new int[] { 1 }, new int[] { 1 })]
         public void Test(int[] array, int[] expected)
         {
             MoveZeroes(array);
